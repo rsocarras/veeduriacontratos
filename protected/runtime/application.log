@@ -1,0 +1,1005 @@
+2013/05/24 06:06:31 [error] [exception.CException] exception 'CException' with message 'Alias "ext.bootstrap.components.Bootstrap" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/YiiBase.php:316
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/YiiBase.php(196): YiiBase::import('ext.bootstrap.c...', true)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CModule.php(523): CModule->getComponent('bootstrap')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(152): CModule->preloadComponents()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/YiiBase.php(125): CApplication->__construct('/Applications/X...')
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): YiiBase::createWebApplication('/Applications/X...')
+#7 {main}
+REQUEST_URI=/oula/
+---
+2013/05/24 06:12:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.col".' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(270): CController->missingAction('index.col')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index.col')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index.col')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/oula/site/index.col
+HTTP_REFERER=http://localhost/oula/site/page.col?view=about
+---
+2013/05/29 01:57:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "user" solicitada.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(270): CController->missingAction('user')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('user')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/user')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/oula/site/user
+---
+2013/05/29 01:58:49 [error] [exception.CException] exception 'CException' with message 'Propiedad "User"."company_id" no se encuentra definida.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('company_id')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/helpers/CHtml.php(2255): CActiveRecord->__get('company_id')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/helpers/CHtml.php(1980): CHtml::resolveValue(Object(User), 'company_id')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/helpers/CHtml.php(1257): CHtml::activeInputField('text', Object(User), 'company_id', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/widgets/CActiveForm.php(657): CHtml::activeTextField(Object(User), 'company_id', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/extensions/bootstrap/widgets/input/TbInputVertical.php(213): CActiveForm->textField(Object(User), 'company_id', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/extensions/bootstrap/widgets/input/TbInput.php(291): TbInputVertical->textField()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(173): TbInput->run()
+#8 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/extensions/bootstrap/widgets/TbActiveForm.php(1096): CBaseController->widget('bootstrap.widge...', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/extensions/bootstrap/widgets/TbActiveForm.php(278): TbActiveForm->inputRow('text', Object(User), 'company_id', NULL, Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/views/user/_form.php(12): TbActiveForm->textFieldRow(Object(User), 'company_id', Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#14 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/views/user/create.php(16): CController->renderPartial('_form', Array)
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#17 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#18 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#19 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/UserController.php(90): CController->render('create', Array)
+#20 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): UserController->actionCreate()
+#21 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#22 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#23 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#24 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#25 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#26 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#27 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#28 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#30 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/create')
+#31 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#32 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/oula/user/create.html
+HTTP_REFERER=http://localhost/oula/user
+---
+2013/05/29 02:04:07 [error] [exception.CException] exception 'CException' with message 'Propiedad "User"."messenger" no se encuentra definida.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('messenger')
+#1 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/UserController.php(186): CActiveRecord->__get('messenger')
+#2 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/UserController.php(57): UserController->loadModel('5')
+#3 [internal function]: UserController->actionView('5')
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/oula/user/5.html
+HTTP_REFERER=http://localhost/oula/user/create.html
+---
+2013/05/29 02:06:44 [error] [exception.CException] exception 'CException' with message 'Propiedad "User"."messenger" no se encuentra definida.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('messenger')
+#1 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/UserController.php(186): CActiveRecord->__get('messenger')
+#2 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/UserController.php(57): UserController->loadModel('5')
+#3 [internal function]: UserController->actionView('5')
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/oula/user/5.html
+HTTP_REFERER=http://localhost/oula/user/create.html
+---
+2013/05/29 02:06:46 [error] [exception.CException] exception 'CException' with message 'Propiedad "User"."messenger" no se encuentra definida.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('messenger')
+#1 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/UserController.php(186): CActiveRecord->__get('messenger')
+#2 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/UserController.php(57): UserController->loadModel('5')
+#3 [internal function]: UserController->actionView('5')
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/oula/user/5.html
+HTTP_REFERER=http://localhost/oula/user/create.html
+---
+2013/05/29 02:06:58 [error] [exception.CException] exception 'CException' with message 'Propiedad "User"."messenger" no se encuentra definida.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('messenger')
+#1 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/UserController.php(186): CActiveRecord->__get('messenger')
+#2 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/UserController.php(57): UserController->loadModel('5')
+#3 [internal function]: UserController->actionView('5')
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/oula/user/5.html
+HTTP_REFERER=http://localhost/oula/user/create.html
+---
+2013/05/29 02:07:00 [error] [exception.CException] exception 'CException' with message 'Propiedad "User"."messenger" no se encuentra definida.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('messenger')
+#1 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/UserController.php(186): CActiveRecord->__get('messenger')
+#2 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/UserController.php(57): UserController->loadModel('5')
+#3 [internal function]: UserController->actionView('5')
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/oula/user/5.html
+HTTP_REFERER=http://localhost/oula/user/create.html
+---
+2013/05/29 02:07:01 [error] [exception.CException] exception 'CException' with message 'Propiedad "User"."messenger" no se encuentra definida.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('messenger')
+#1 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/UserController.php(186): CActiveRecord->__get('messenger')
+#2 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/UserController.php(57): UserController->loadModel('5')
+#3 [internal function]: UserController->actionView('5')
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/oula/user/5.html
+HTTP_REFERER=http://localhost/oula/user/create.html
+---
+2013/05/29 02:07:01 [error] [exception.CException] exception 'CException' with message 'Propiedad "User"."messenger" no se encuentra definida.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('messenger')
+#1 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/UserController.php(186): CActiveRecord->__get('messenger')
+#2 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/UserController.php(57): UserController->loadModel('5')
+#3 [internal function]: UserController->actionView('5')
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/oula/user/5.html
+HTTP_REFERER=http://localhost/oula/user/create.html
+---
+2013/05/29 02:07:01 [error] [exception.CException] exception 'CException' with message 'Propiedad "User"."messenger" no se encuentra definida.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('messenger')
+#1 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/UserController.php(186): CActiveRecord->__get('messenger')
+#2 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/UserController.php(57): UserController->loadModel('5')
+#3 [internal function]: UserController->actionView('5')
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/oula/user/5.html
+HTTP_REFERER=http://localhost/oula/user/create.html
+---
+2013/05/29 02:11:02 [error] [exception.CException] exception 'CException' with message 'Propiedad "AuthWebUser"."admins" no se encuentra definida.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/auth/CWebUser.php(154): CComponent->__set('admins', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/YiiBase.php(220): CWebUser->__set('admins', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(209): CModule->getComponent('user')
+#4 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/modules/auth/AuthModule.php(112): CWebApplication->getUser()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(263): AuthModule->beforeControllerAction(Object(AssignmentController), Object(CInlineAction))
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('auth')
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/oula/auth
+---
+2013/05/29 02:13:11 [error] [exception.CException] exception 'CException' with message 'Propiedad "AuthWebUser"."admins" no se encuentra definida.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/auth/CWebUser.php(154): CComponent->__set('admins', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/YiiBase.php(220): CWebUser->__set('admins', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(209): CModule->getComponent('user')
+#4 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/modules/auth/AuthModule.php(112): CWebApplication->getUser()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(263): AuthModule->beforeControllerAction(Object(AssignmentController), Object(CInlineAction))
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('auth')
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/oula/auth
+---
+2013/05/29 02:13:14 [error] [exception.CException] exception 'CException' with message 'Propiedad "AuthWebUser"."admins" no se encuentra definida.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/auth/CWebUser.php(154): CComponent->__set('admins', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/YiiBase.php(220): CWebUser->__set('admins', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(209): CModule->getComponent('user')
+#4 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/modules/auth/AuthModule.php(112): CWebApplication->getUser()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(263): AuthModule->beforeControllerAction(Object(AssignmentController), Object(CInlineAction))
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('auth')
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/oula/auth
+---
+2013/05/29 02:13:26 [error] [exception.CException] exception 'CException' with message 'Propiedad "AuthWebUser"."admins" no se encuentra definida.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/auth/CWebUser.php(154): CComponent->__set('admins', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/YiiBase.php(220): CWebUser->__set('admins', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(209): CModule->getComponent('user')
+#4 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/modules/auth/AuthModule.php(112): CWebApplication->getUser()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(263): AuthModule->beforeControllerAction(Object(AssignmentController), Object(CInlineAction))
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('auth')
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/oula/auth
+---
+2013/05/29 02:13:27 [error] [exception.CException] exception 'CException' with message 'Propiedad "AuthWebUser"."admins" no se encuentra definida.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/auth/CWebUser.php(154): CComponent->__set('admins', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/YiiBase.php(220): CWebUser->__set('admins', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(209): CModule->getComponent('user')
+#4 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/modules/auth/AuthModule.php(112): CWebApplication->getUser()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(263): AuthModule->beforeControllerAction(Object(AssignmentController), Object(CInlineAction))
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('auth')
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/oula/auth
+---
+2013/05/29 02:14:27 [error] [exception.CException] exception 'CException' with message 'Propiedad "AuthWebUser"."admins" no se encuentra definida.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/auth/CWebUser.php(154): CComponent->__set('admins', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/YiiBase.php(220): CWebUser->__set('admins', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(209): CModule->getComponent('user')
+#4 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/modules/auth/AuthModule.php(112): CWebApplication->getUser()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(263): AuthModule->beforeControllerAction(Object(AssignmentController), Object(CInlineAction))
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('auth')
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/oula/auth
+---
+2013/05/29 02:14:29 [error] [exception.CException] exception 'CException' with message 'Propiedad "AuthWebUser"."admins" no se encuentra definida.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/auth/CWebUser.php(154): CComponent->__set('admins', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/YiiBase.php(220): CWebUser->__set('admins', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(209): CModule->getComponent('user')
+#4 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/modules/auth/AuthModule.php(112): CWebApplication->getUser()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(263): AuthModule->beforeControllerAction(Object(AssignmentController), Object(CInlineAction))
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('auth')
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/oula/auth
+---
+2013/05/29 02:15:47 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Access denied.' in /Applications/XAMPP/xamppfiles/htdocs/oula/protected/modules/auth/AuthModule.php:122
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(263): AuthModule->beforeControllerAction(Object(AssignmentController), Object(CInlineAction))
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('auth')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/oula/auth
+---
+2013/06/02 18:38:52 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Access denied.' in /Applications/XAMPP/xamppfiles/htdocs/oula/protected/modules/auth/AuthModule.php:122
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(263): AuthModule->beforeControllerAction(Object(AssignmentController), Object(CInlineAction))
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('auth')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/oula/auth
+---
+2013/06/02 18:39:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "auhtç"' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('auht??')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/oula/auht%C3%A7
+---
+2013/06/02 18:52:29 [error] [exception.CException] exception 'CException' with message 'Alias "path.to.SocialShareWidget" es inválido. Verifique que el mismo apunta a un directorio o archivo exisitente.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('path.to.SocialS...', true)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'path.to.SocialS...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('path.to.SocialS...', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/oula/themes/bootstrap/views/site/index.php(19): CBaseController->widget('path.to.SocialS...', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', NULL, true)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', NULL, true)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#8 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/SiteController.php(32): CController->render('index')
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/oula/site/index.html
+HTTP_REFERER=http://localhost/oula/site/page.html?view=about
+---
+2013/06/02 18:52:57 [error] [exception.CException] exception 'CException' with message 'Alias "components.widgets.SocialShareWidget" es inválido. Verifique que el mismo apunta a un directorio o archivo exisitente.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('components.widg...', true)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'components.widg...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('components.widg...', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/oula/themes/bootstrap/views/site/index.php(19): CBaseController->widget('components.widg...', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', NULL, true)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', NULL, true)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#8 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/SiteController.php(32): CController->render('index')
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/oula/site/index.html
+HTTP_REFERER=http://localhost/oula/site/page.html?view=about
+---
+2013/06/02 18:56:34 [error] [exception.CException] exception 'CException' with message 'Alias "share.SocialShareWidget" es inválido. Verifique que el mismo apunta a un directorio o archivo exisitente.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('share.SocialSha...', true)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'share.SocialSha...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('share.SocialSha...', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/oula/themes/bootstrap/views/site/index.php(19): CBaseController->widget('share.SocialSha...', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', NULL, true)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', NULL, true)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#8 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/SiteController.php(32): CController->render('index')
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/oula/site/index.html
+HTTP_REFERER=http://localhost/oula/site/page.html?view=about
+---
+2013/06/02 18:56:36 [error] [exception.CException] exception 'CException' with message 'Alias "share.SocialShareWidget" es inválido. Verifique que el mismo apunta a un directorio o archivo exisitente.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('share.SocialSha...', true)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'share.SocialSha...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('share.SocialSha...', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/oula/themes/bootstrap/views/site/index.php(19): CBaseController->widget('share.SocialSha...', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', NULL, true)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', NULL, true)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#8 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/SiteController.php(32): CController->render('index')
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/oula/site/index.html
+HTTP_REFERER=http://localhost/oula/site/page.html?view=about
+---
+2013/06/02 19:29:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "comun/js/js1.js"' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comun/js/js1.js')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/oula/comun/js/js1.js
+HTTP_REFERER=http://localhost/oula/
+---
+2013/06/02 19:29:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "comun/js/js2.js"' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comun/js/js2.js')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/oula/comun/js/js2.js
+HTTP_REFERER=http://localhost/oula/
+---
+2013/06/02 19:29:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "comun/images/pdf.jpg"' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comun/images/pd...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/oula/comun/images/pdf.jpg
+HTTP_REFERER=http://localhost/oula/
+---
+2013/06/02 19:46:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "comun/js/js2.js"' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comun/js/js2.js')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/oula/comun/js/js2.js
+HTTP_REFERER=http://localhost/oula/
+---
+2013/06/02 19:46:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "comun/js/js1.js"' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comun/js/js1.js')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/oula/comun/js/js1.js
+HTTP_REFERER=http://localhost/oula/
+---
+2013/06/02 19:46:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "comun/images/pdf.jpg"' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comun/images/pd...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/oula/comun/images/pdf.jpg
+HTTP_REFERER=http://localhost/oula/
+---
+2013/06/02 19:47:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "comun/images/pdf.jpg"' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comun/images/pd...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/oula/comun/images/pdf.jpg
+HTTP_REFERER=http://localhost/oula/
+---
+2013/06/02 19:47:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "comun/images/pdf.jpg"' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comun/images/pd...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/oula/comun/images/pdf.jpg
+HTTP_REFERER=http://localhost/oula/
+---
+2013/06/02 19:50:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "comun/images/pdf.jpg"' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comun/images/pd...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/oula/comun/images/pdf.jpg
+HTTP_REFERER=http://localhost/oula/
+---
+2013/06/02 19:50:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "VerDocumentoPublic"' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('VerDocumentoPub...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/oula/VerDocumentoPublic
+HTTP_REFERER=http://localhost/oula/
+---
+2013/06/02 19:50:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "comun/images/pdf.jpg"' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comun/images/pd...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/oula/comun/images/pdf.jpg
+HTTP_REFERER=http://localhost/oula/
+---
+2013/06/02 19:50:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "comun/images/pdf.jpg"' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comun/images/pd...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/oula/comun/images/pdf.jpg
+HTTP_REFERER=http://localhost/oula/
+---
+2013/06/02 19:51:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "comun/images/pdf.jpg"' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comun/images/pd...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/oula/comun/images/pdf.jpg
+HTTP_REFERER=http://localhost/oula/
+---
+2013/06/02 19:56:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "comun/images/pdf.jpg"' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comun/images/pd...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/oula/comun/images/pdf.jpg
+HTTP_REFERER=http://localhost/oula/
+---
+2013/06/02 20:03:03 [error] [php] DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID btnSubmit already defined in Entity, line: 1 (/Applications/XAMPP/xamppfiles/htdocs/oula/themes/bootstrap/views/site/index.php:15)
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/SiteController.php(32): SiteController->render()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): SiteController->runAction()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CWebApplication->run()
+REQUEST_URI=/oula/
+in /Applications/XAMPP/xamppfiles/htdocs/oula/themes/bootstrap/views/site/index.php (15)
+in /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/SiteController.php (32)
+in /Applications/XAMPP/xamppfiles/htdocs/oula/index.php (13)
+2013/06/02 20:06:38 [error] [php] include(/Applications/XAMPP/xamppfiles/htdocs/oula/protected/extensions/SimpleHTMLDOM/SimpleHTMLDOM.php) [<a href='function.include'>function.include</a>]: failed to open stream: Permission denied (/Applications/XAMPP/xamppfiles/htdocs/yii/framework/YiiBase.php:395)
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/oula/themes/bootstrap/views/site/index.php(32): spl_autoload_call()
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require()
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(869): SiteController->renderFile()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#5 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/SiteController.php(32): SiteController->render()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): SiteController->runAction()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CWebApplication->run()
+REQUEST_URI=/oula/
+in /Applications/XAMPP/xamppfiles/htdocs/oula/themes/bootstrap/views/site/index.php (32)
+in /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/SiteController.php (32)
+in /Applications/XAMPP/xamppfiles/htdocs/oula/index.php (13)
+2013/06/02 20:06:39 [error] [php] include(/Applications/XAMPP/xamppfiles/htdocs/oula/protected/extensions/SimpleHTMLDOM/SimpleHTMLDOM.php) [<a href='function.include'>function.include</a>]: failed to open stream: Permission denied (/Applications/XAMPP/xamppfiles/htdocs/yii/framework/YiiBase.php:395)
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/oula/themes/bootstrap/views/site/index.php(32): spl_autoload_call()
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require()
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(869): SiteController->renderFile()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#5 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/SiteController.php(32): SiteController->render()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): SiteController->runAction()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CWebApplication->run()
+REQUEST_URI=/oula/
+in /Applications/XAMPP/xamppfiles/htdocs/oula/themes/bootstrap/views/site/index.php (32)
+in /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/SiteController.php (32)
+in /Applications/XAMPP/xamppfiles/htdocs/oula/index.php (13)
+2013/06/02 20:06:59 [error] [php] include(/Applications/XAMPP/xamppfiles/htdocs/oula/protected/extensions/SimpleHTMLDOM/SimpleHTMLDOM.php) [<a href='function.include'>function.include</a>]: failed to open stream: Permission denied (/Applications/XAMPP/xamppfiles/htdocs/yii/framework/YiiBase.php:395)
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/oula/themes/bootstrap/views/site/index.php(32): spl_autoload_call()
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require()
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(869): SiteController->renderFile()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#5 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/SiteController.php(32): SiteController->render()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): SiteController->runAction()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CWebApplication->run()
+REQUEST_URI=/oula/
+in /Applications/XAMPP/xamppfiles/htdocs/oula/themes/bootstrap/views/site/index.php (32)
+in /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/SiteController.php (32)
+in /Applications/XAMPP/xamppfiles/htdocs/oula/index.php (13)
+2013/06/02 20:07:01 [error] [php] include(/Applications/XAMPP/xamppfiles/htdocs/oula/protected/extensions/SimpleHTMLDOM/SimpleHTMLDOM.php) [<a href='function.include'>function.include</a>]: failed to open stream: Permission denied (/Applications/XAMPP/xamppfiles/htdocs/yii/framework/YiiBase.php:395)
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/oula/themes/bootstrap/views/site/index.php(32): spl_autoload_call()
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require()
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(869): SiteController->renderFile()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#5 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/SiteController.php(32): SiteController->render()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): SiteController->runAction()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CWebApplication->run()
+REQUEST_URI=/oula/
+in /Applications/XAMPP/xamppfiles/htdocs/oula/themes/bootstrap/views/site/index.php (32)
+in /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/SiteController.php (32)
+in /Applications/XAMPP/xamppfiles/htdocs/oula/index.php (13)
+2013/06/02 22:41:23 [error] [exception.CException] exception 'CException' with message 'SiteController no ha podido encontrar la vista "_form" solicitada.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/views/contratos/create.php(15): CController->renderPartial('_form', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', NULL, true)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', NULL, true)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('//contratos/cre...', NULL, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/SiteController.php(32): CController->render('//contratos/cre...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/oula/
+HTTP_REFERER=http://localhost/oula/contratos/2.html
+---
+2013/06/02 22:42:09 [error] [exception.CException] exception 'CException' with message 'SiteController no ha podido encontrar la vista "_form" solicitada.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/views/contratos/create.php(15): CController->renderPartial('_form', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('//contratos/cre...', Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/SiteController.php(36): CController->render('//contratos/cre...', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/oula/
+HTTP_REFERER=http://localhost/oula/contratos/2.html
+---
+2013/06/02 22:42:10 [error] [exception.CException] exception 'CException' with message 'SiteController no ha podido encontrar la vista "_form" solicitada.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/views/contratos/create.php(15): CController->renderPartial('_form', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('//contratos/cre...', Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/SiteController.php(36): CController->render('//contratos/cre...', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/oula/
+HTTP_REFERER=http://localhost/oula/contratos/2.html
+---
+2013/06/02 22:42:21 [error] [exception.CException] exception 'CException' with message 'SiteController no ha podido encontrar la vista "_form" solicitada.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/views/contratos/create.php(15): CController->renderPartial('_form', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('/contratos/crea...', Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/SiteController.php(36): CController->render('/contratos/crea...', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/oula/
+HTTP_REFERER=http://localhost/oula/contratos/2.html
+---
+2013/06/02 22:42:23 [error] [exception.CException] exception 'CException' with message 'SiteController no ha podido encontrar la vista "_form" solicitada.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/views/contratos/create.php(15): CController->renderPartial('_form', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('/contratos/crea...', Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/SiteController.php(36): CController->render('/contratos/crea...', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/oula/
+HTTP_REFERER=http://localhost/oula/contratos/2.html
+---
+2013/06/02 22:44:29 [error] [exception.CException] exception 'CException' with message 'SiteController no ha podido encontrar la vista "contratos/create" solicitada.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('contratos/creat...', Array, true)
+#1 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/SiteController.php(36): CController->render('contratos/creat...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/oula/
+HTTP_REFERER=http://localhost/oula/contratos/2.html
+---
+2013/06/02 22:44:30 [error] [exception.CException] exception 'CException' with message 'SiteController no ha podido encontrar la vista "contratos/create" solicitada.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('contratos/creat...', Array, true)
+#1 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/SiteController.php(36): CController->render('contratos/creat...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/oula/
+HTTP_REFERER=http://localhost/oula/contratos/2.html
+---
+2013/06/02 22:44:35 [error] [exception.CException] exception 'CException' with message 'SiteController no ha podido encontrar la vista "_form" solicitada.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/views/contratos/create.php(15): CController->renderPartial('_form', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('/contratos/crea...', Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/SiteController.php(36): CController->render('/contratos/crea...', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/oula/
+HTTP_REFERER=http://localhost/oula/contratos/2.html
+---
+2013/06/02 22:54:43 [error] [exception.CException] exception 'CException' with message 'SiteController no ha podido encontrar la vista "_form" solicitada.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/views/contratos/create.php(15): CController->renderPartial('_form', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('/contratos/crea...', Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/SiteController.php(36): CController->render('/contratos/crea...', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/oula/
+---
+2013/06/02 22:57:47 [error] [exception.CException] exception 'CException' with message 'SiteController no ha podido encontrar la vista "_form" solicitada.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/views/contratos/create.php(15): CController->renderPartial('_form', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('/contratos/crea...', Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/SiteController.php(36): CController->render('/contratos/crea...', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/oula/
+---
+2013/06/02 22:58:36 [error] [exception.CException] exception 'CException' with message 'SiteController no ha podido encontrar la vista "contratos/index" solicitada.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('contratos/index', NULL, true)
+#1 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/SiteController.php(32): CController->render('contratos/index')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/oula/
+---
+2013/06/02 22:58:42 [error] [exception.CException] exception 'CException' with message 'La propiedad "dataProvider" no puede estar vacia.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/zii/widgets/CBaseListView.php:105
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/zii/widgets/CListView.php(203): CBaseListView->init()
+#1 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/extensions/bootstrap/widgets/TbListView.php(41): CListView->init()
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(147): TbListView->init()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/views/contratos/index.php(17): CBaseController->widget('bootstrap.widge...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', NULL, true)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', NULL, true)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('//contratos/ind...', NULL, true)
+#9 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/SiteController.php(32): CController->render('//contratos/ind...')
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/oula/
+---
+2013/06/02 22:59:11 [error] [php] require() [<a href='function.require'>function.require</a>]: Filename cannot be empty (/Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php:130)
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/zii/widgets/CListView.php(281): SiteController->renderFile()
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/zii/widgets/CBaseListView.php(160): TbListView->renderItems()
+#2 unknown(0): TbListView->renderSection()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/zii/widgets/CBaseListView.php(143): preg_replace_callback()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/zii/widgets/CBaseListView.php(128): TbListView->renderContent()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(173): TbListView->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/views/contratos/index.php(17): SiteController->widget()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require()
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(869): SiteController->renderFile()
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#11 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/SiteController.php(35): SiteController->render()
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): SiteController->runAction()
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#17 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#19 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CWebApplication->run()
+REQUEST_URI=/oula/
+in /Applications/XAMPP/xamppfiles/htdocs/oula/protected/views/contratos/index.php (17)
+in /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/SiteController.php (35)
+in /Applications/XAMPP/xamppfiles/htdocs/oula/index.php (13)
+2013/06/02 23:00:26 [error] [exception.CException] exception 'CException' with message 'SiteController no ha podido encontrar la vista "_form" solicitada.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/views/contratos/create.php(15): CController->renderPartial('_form', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('//contratos/cre...', Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/SiteController.php(37): CController->render('//contratos/cre...', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/oula/
+---
+2013/06/02 23:00:27 [error] [exception.CException] exception 'CException' with message 'SiteController no ha podido encontrar la vista "_form" solicitada.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/views/contratos/create.php(15): CController->renderPartial('_form', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('//contratos/cre...', Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/oula/protected/controllers/SiteController.php(37): CController->render('//contratos/cre...', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /Applications/XAMPP/xamppfiles/htdocs/oula/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/oula/
+---
