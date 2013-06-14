@@ -15,7 +15,11 @@ array('label'=>'Manage Contratos','url'=>array('admin')),
 
 <h1>View Contratos #<?php echo $model->id; ?></h1>
 
-<?php $this->widget('bootstrap.widgets.TbDetailView',array(
+<?php
+
+var_dump($model);
+
+ $this->widget('bootstrap.widgets.TbDetailView',array(
 'data'=>$model,
 'attributes'=>array(
 		'id',

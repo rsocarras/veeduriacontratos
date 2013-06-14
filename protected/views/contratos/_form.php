@@ -10,7 +10,7 @@
 
 <p class="help-block">Fields with <span class="required">*</span> are required.</p>
 
-<?php echo $form->errorSummary($model); ?>
+<?php var_dump($model); echo $form->errorSummary($model); ?>
 
 	<?php echo $form->textAreaRow($model,'url',array('rows'=>2, 'cols'=>50, 'class'=>'span8')); ?>
 
